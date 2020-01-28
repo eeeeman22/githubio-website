@@ -14,7 +14,8 @@ const About = () => (
         Feel free to check out some of the projects I've worked on, or some of
         my recital recordings.
       </p>
-      <p>Cheers, Ian</p>
+      <p>Cheers, </p>
+      <p>Ian</p>
     </div>
   </div>
 );
