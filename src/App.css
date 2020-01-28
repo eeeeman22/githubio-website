@@ -1,38 +1,79 @@
-.App {
+html,
+body {
+  background-color: black;
+  /* color: aliceblue; */
+}
+ul.navbar {
+  position: absolute;
+  top: 0;
+  width: -webkit-fill-available;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: aliceblue;
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+div.navbarElement {
+  padding: 10px;
+  width: 100px;
+  height: 100%;
+  transition: font-weight 0.1s ease-in;
+}
+div.navbarElement:hover {
+  transition: font-weight 0.1s ease-in;
+  font-weight: 800;
+  cursor: grab;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.navbarTitle h1 {
+  width: 250px;
+  text-align: center;
+  margin: 0;
+}
+
+div.sectionContainer {
+  color: aliceblue;
+  text-align: left;
+  font-size: x-large;
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  margin-top: 20vh;
+  padding-left: 10vw;
+  margin-right: 10vw;
+}
+div.sectionContainer div.pBody {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* about */
+div.aboutBackground {
+  background: url('/images/aboutBackground.jpg') no-repeat center center fixed;
+
+  background-size: cover;
+  height: 100vh;
+}
+
+/* animations */
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in;
 }
