@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const About = () => (
   <div className="sectionContainer">
@@ -15,7 +14,8 @@ const About = () => (
         my recital recordings.
       </p>
       <p>Cheers, </p>
-      <p>Ian</p>
+      <a href="mailto:eeeeman@icloud.com">Ian</a>
+      <p></p>
     </div>
   </div>
 );
