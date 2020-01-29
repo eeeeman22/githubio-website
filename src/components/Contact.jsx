@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-
 const Contact = () => (
   <div className="sectionContainer">
     <ReactCSSTransitionGroup
@@ -10,8 +9,16 @@ const Contact = () => (
       transitionEnterTimeout={500}
       transitionLeaveTimeout={500}
     >
-      <h1>Contact</h1>
-      <p>write links here</p>
+      <h1>hi</h1>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div
+          style={{
+            backgroundImage: `url(/images/jtree.jpg)`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center'
+          }}
+        ></div>
+      </div>
     </ReactCSSTransitionGroup>
   </div>
 );
